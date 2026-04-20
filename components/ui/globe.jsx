@@ -44,7 +44,7 @@ export function Globe({
     if (!globeRef.current && groupRef.current) {
       globeRef.current = new ThreeGlobe();
       (groupRef.current).add(globeRef.current);
-      setIsInitialized(true);
+      setTimeout(() => setIsInitialized(true), 0);
     }
   }, []);
 
@@ -180,7 +180,7 @@ export function WebGLRendererConfig() {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-  }, []);
+  }, [gl, size.width, size.height]);
 
   return null;
 }
