@@ -15,7 +15,7 @@ export default function Footer() {
           
           {/* Brand */}
           <div>
-            <h2 className="text-2xl font-bold">StreamTalk </h2>
+            <h2 className="text-2xl font-bold">StreamTalk</h2>
             <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
               A real-time discussion platform to connect, share ideas, and
               collaborate instantly with developers worldwide.
@@ -23,10 +23,10 @@ export default function Footer() {
 
             {/* Social */}
             <div className="flex gap-4 mt-5">
-              <Link href="#">
+              <Link href="https://github.com/RishabhDubeyCS" target="_blank">
                 <Github className="w-5 h-5 hover:text-white transition" />
               </Link>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/rishabh-dubey-362500298/" target="_blank">
                 <Linkedin className="w-5 h-5 hover:text-white transition" />
               </Link>
               <Link href="#">
@@ -52,7 +52,11 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link href="#">Documentation</Link></li>
               <li><Link href="#">API Reference</Link></li>
-              <li><Link href="#">GitHub Repo</Link></li>
+              <li>
+                <Link href="https://github.com/RishabhDubeyCS" target="_blank">
+                  GitHub Repo
+                </Link>
+              </li>
               <li><Link href="#">Support</Link></li>
             </ul>
           </div>
@@ -80,6 +84,17 @@ export default function Footer() {
           
           <p>
             © {new Date().getFullYear()} StreamTalk. All rights reserved.
+          </p>
+
+          <p className="text-center">
+            Crafted with  by{" "}
+            <Link
+              href="https://www.linkedin.com/in/rishabh-dubey-362500298/"
+              target="_blank"
+              className="font-medium hover:text-white transition"
+            >
+              Rishabh Dubey
+            </Link>
           </p>
 
           <div className="flex gap-5">
