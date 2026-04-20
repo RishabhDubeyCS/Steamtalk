@@ -3,6 +3,8 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function SpotlightPreview() {
   return (
@@ -36,12 +38,16 @@ export default function SpotlightPreview() {
 
         {/* Buttons */}
         <div className="mt-8 flex justify-center gap-4">
-          <button className="rounded-lg bg-white px-6 py-2 text-black font-medium hover:bg-neutral-200 transition">
-            Get Started
-          </button>
-          <button className="rounded-lg border border-neutral-600 px-6 py-2 text-white hover:bg-neutral-800 transition">
-            View GitHub
-          </button>
+          <Link href="/chat">
+            <Button className="bg-white text-black hover:bg-neutral-200">
+              Get Started
+            </Button>
+          </Link>
+          <a href="https://github.com/RishabhDubeyCS/Steamtalk" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline">
+              View GitHub
+            </Button>
+          </a>
         </div>
 
       </div>

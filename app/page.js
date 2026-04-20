@@ -36,7 +36,7 @@ export default function Home() {
         <section className="w-full">
           <GlobeDemo />
         </section>
-
+<CanvasTextDemo/>
       </div>
     </main>
   );
